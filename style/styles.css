@@ -57,10 +57,16 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
+  color: #fff;
 }
 
 main {
-  padding: 0 4rem;
+  padding: 0 6rem;
+}
+@media screen and (max-width: 800px) {
+  main {
+    padding: 0 2rem;
+  }
 }
 
 .top-nav {
@@ -106,6 +112,102 @@ main {
   width: 100vw;
   height: 0.2rem;
   background-color: #192933;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .title {
+    text-align: center;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 550px) {
+  .profile {
+    flex-direction: column;
+  }
+}
+.profile__left-circle {
+  width: 16rem;
+  height: 16rem;
+  background-color: #192933;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile__left-circle > img {
+  height: 4rem;
+}
+@media screen and (max-width: 550px) {
+  .profile__right {
+    text-align: center;
+  }
+}
+.profile__right > h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.profile__right > p:first-of-type {
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+  color: #94B2C7;
+}
+.profile__right > :last-child {
+  color: #fff;
+  font-size: 1.8rem;
+  max-width: 60%;
+}
+@media screen and (max-width: 550px) {
+  .profile__right > :last-child {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 800px) {
+  .profile__right > :last-child {
+    max-width: 100%;
+  }
+}
+
+.about > p {
+  font-size: 1.8rem;
+  max-width: 80%;
+  text-align: justify;
+  margin-left: 1rem;
+  line-height: 22px;
+}
+@media screen and (max-width: 550px) {
+  .about > p {
+    max-width: 100%;
+  }
+}
+
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+.skills__items-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: #192933;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #243847;
+  padding: 1rem 1.6rem;
+  font-size: 1.8rem;
+  width: 14rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
